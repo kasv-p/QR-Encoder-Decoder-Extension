@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FastAPI Extension</title>
+</head>
+<body>
+  <h1>Qr Encoder</h1>
+  <form id="form">
+    <label for="type">Type:</label>
+    <select id="type" name="type">
+      <option value="upi_id">UPI ID</option>
+      <option value="bank_account">Bank Account</option>
+      <option value="text_or_url">Text/Url</option>
+    </select><br><br>
+
+    
+      <label for="payee_name" class="upi_id">payee Name</label>
+      <input type="text" id="payee_name" name="payee_name" class="upi_id"><br><br>
+      <label for="payee_vpa" class="upi_id">Payee Vpa</label>
+      <input type="text" id="payee_vpa" name="payee_vpa" class="upi_id"><br><br>
+
+      <label for="account_no" class="bank_account">Account Number</label>
+      <input type="text" id="account_no" name="account_no" class="bank_account"><br><br>
+      <label for="ifsc_code" class="bank_account">Ifsc Code</label>
+      <input type="text" id="ifsc_code" name="ifsc_code" class="bank_account"><br><br>
+
+      <label for="text" class="text_or_url">Text/Url</label>
+      <input type="text" id="text" name="text" class="text_or_url"><br><br>
+
+      <button type="submit">Submit</button>
+    
+  </form>
+ 
+  <img id="qrCodeImg"></img>
+  <h1>Qr Decoder</h1>
+  <input type="file" id="image-input">
+    <button id="button">Upload</button>
+    <h4 id="decoded-text"></h4>
+  <script src="popup.js"></script>
+</body>
+</html>

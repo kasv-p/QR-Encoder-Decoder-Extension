@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Qr Code Generator",
+    "version": "1.0",
+    "description": "Chrome extension to interact with FastAPI endpoint",
+    "permissions": ["http://0.0.0.0:8000/*",
+    "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
